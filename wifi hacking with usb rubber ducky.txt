@@ -1,4 +1,6 @@
-// Converted using digiQuack by CedArctic (https://github.com/CedArctic/digiQuack) 
+// Please be carefully SKYNET is here.................
+// This program work on and based on Hacking and IOT.
+// Do nothing wrong with this things
 
 #include "DigiKeyboard.h"
 
